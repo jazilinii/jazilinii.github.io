@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galería</title>
+  <style>
+    body {
+      background-color: #fa0ec7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      text-align: center;
+      color: white;
+    }
+
+    h2 {
+      margin: 20px 0;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .galeria img {
+      width: 200px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, filter 0.3s ease;
+      /* Máscara: forma el recorte y estilo */
+      -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 70%, transparent 100%);
+      mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 70%, transparent 100%);
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+      cursor: pointer;
+    }
+
+    button {
+      margin: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      background-color: white;
+      color: #fa0ec7;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #fa0ec7;
+      color: white;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Galería de Lentes Tecnológicos</h2>
+  <div class="galeria">
+    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/10/gafas-inteligentes.jpg?tf=3840x" alt="Lente 1">
+    <img src="https://www.informador.mx/__export/1727306677903/sites/elinformador/img/2024/09/25/gafas_orion_version1727306583963.png_788543494.png" alt="Lente 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvtRsZXpG3ain6tj3VNakMLi0shcwu19iWw&s" alt="Lente 3">
+    <img src="https://imagenes.elpais.com/resizer/v2/LHJJK6VD3ZISZIZL56BG5FW6JI.jpg?auth=d4f67ae3f4434b54e48b23e98093726a5e7fd821c1a8584d2b9db06a3e51de63&width=414" alt="Lente 4">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbYf3D9Cs7Jkh09bYx_caLOxqHtipbMOzEA&s" alt="Lente 5">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6CvhmMQvB8eb_qJWBpVJxx43EBta10YNzSA&s" alt="Lente 6">
+    <img src="https://alegerglobal.com/wp-content/uploads/2021/08/2323.jpg" alt="Lente 7">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLvWwFK36HpigWMZMhjDxZqJr9AWJ_-VYaA&s" alt="Lente 8">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6WM3_85ww1xvawNetGXo0yppKfmI1SA230Q&s" alt="Lente 9">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6WM3_85ww1xvawNetGXo0yppKfmI1SA230Q&s" alt="Lente 10">
+  </div>
+
+  <button onclick="window.location.href='index.html'">Volver al Inicio</button>
+
+  <footer>
+    <p>GARCIA LOPEZ JAZIEL</p>
+    <P>18/06/25</P>
+  </footer>
+</body>
+</html>
